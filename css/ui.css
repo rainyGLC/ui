@@ -11,7 +11,6 @@
 	overflow: hidden;
 }
 .jike-header{
-	width: 1920px;
 	height: 70px;
 	line-height: 70px;
 	background:#2e4947;
@@ -81,7 +80,9 @@
 	margin-top: 25px;
 }
 .wrapper{
-	width: 1920px;
+	min-width: 1000px;
+	width: 100%;
+	margin:0 auto;	
 }
 .banner{
 	height: 650px;
@@ -282,10 +283,10 @@
 	display: none;
 }*/
 .main-container .curriculum{
-	display: none;
+	display:none;
 }
 .main-container .process{
-	display: none;
+	display:none;
 }
 .main-container .evaluate{
 	display: none;
@@ -293,13 +294,13 @@
 .main-container .answer{
 	display: none;
 }
-.course .course-one{
+.section-course .design-container{
 	background:#f9f9f9;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
 
-.course-one .course-design{
+.design-container .course-design{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
@@ -345,12 +346,12 @@
 	background-position: center center;
 	background-size: 70px;
 }
-.course-two{
+.salary-container{
 	background:#fff;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.course-two .course-salary{
+.salary-container .course-salary{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
@@ -378,24 +379,20 @@
 .salary-list .salary-item{
 	display: inline-block;
 	vertical-align: top;
-	width: 450px;
-	height: 450px;
 	margin-right: 95px;
 }
+.salary-item .item-title{
+	margin-bottom: 30px;
+}
+
 .salary-list .salary-item:last-child{
 	margin-right: 0;
 }
 
 .salary-item .item-image{
-	width: 450px;
-	height: 270px;
 	margin-top:20px;
 	margin-bottom: 30px;
 
-}
-.salary-item .item-image img{
-	width: 400px;
-	height: 250px;
 }
 .salary-item .item-avg{
 	font-size: 16px;
@@ -410,19 +407,18 @@
 	color: #2c8680;
 	font-size: 16px;
 	font-weight: 400;
-
 }
-.course-three{
+.learm-container{
 	background:#f9f9f9;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.course-three .cousre-learm{
+.learm-container .cousre-learm{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
 }
-.course-three .learm-title{
+.learm-container .learm-title{
 	font-size:24px;
 	font-weight:500;
 	line-height: 24px;
@@ -430,7 +426,7 @@
 	letter-spacing: 4px;
 	margin-bottom: 20px;
 }
-.course-three .learm-desc{
+.learm-container .learm-desc{
 	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 10px;
@@ -438,31 +434,31 @@
 	font-weight:400;
 	color: #b1b1b5;
 }
-.course-three .recommend{
+.learm-container .recommend{
 	padding-top:86px;
 	text-align: center;
 	color: #666;
 }
-.course-three .recommend-name{
+.learm-container .recommend-name{
 	font-size:16px;
 	margin-top:15px;
 	margin-bottom: 10px;
 }
-.course-three .recommend-desc{
+.learm-container .recommend-desc{
 	font-size: 14px;
 	line-height: 24px;
 }
-.couse-four{
+.coopertion-container{
 	background:#fff;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.couse-four .coopertion{
+.coopertion-container .coopertion{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
 }
-.couse-four.coopertion-tilte{
+.coopertion-container .coopertion-tilte{
 	font-size:24px;
 	font-weight:500;
 	line-height: 24px;
@@ -471,7 +467,7 @@
 	margin-bottom: 20px;
 
 }
-.couse-four .coopertion-desc{
+.coopertion-container .coopertion-desc{
 	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 10px;
@@ -479,15 +475,82 @@
 	font-weight:400;
 	color: #b1b1b5;
 }
-.couse-four .coopertion-conten{
+.coopertion-container .coopertion-conten{
 	margin-top:60px;
+	position: relative;
 }
-.course-five{
+.coopertion-conten .conten-intro{
+	list-style: none;
+}
+.conten-intro li{
+	position: absolute;
+	font-size: 16px;
+	color:#666;
+	white-space: nowrap;
+}
+.conten-intro .intro-one{
+	top:22px;
+	left:57px;
+}
+.conten-intro .intro-two{
+	top:22px;
+	right: -29px;
+}
+.conten-intro .intro-three{
+	top:70px;
+	left:50px;
+}
+.conten-intro .intro-four{
+	top: 68px;
+  right: 60px;
+}
+.conten-intro .intro-five{
+  top: 112px;
+  left: 64px;
+}
+.conten-intro .intro-six{
+  top: 112px;
+  right: 68px;
+}
+.conten-intro .intro-seven{
+  top: 161px;
+  left: 39px;
+}
+.conten-intro .intro-eight{
+	top: 156px;
+  right: 20px;
+}
+.conten-intro .intro-nine{
+	top: 204px;
+  left: -32px;
+}
+.conten-intro .intro-ten{
+	top: 204px;
+  right: 118px;
+}
+.conten-intro .intro-eleven{
+  top: 251px;
+  left: -16px;
+}
+.conten-intro .intro-twelve{
+	top: 249px;
+  right: 104px;
+}
+.conten-intro .intro-thirteen{
+	top: 296px;
+  left: 121px;
+}
+.conten-intro .intro-fourteen{
+  top: 298px;
+  right: 95px;
+}
+
+.circle-container{
 	background:#f9f9f9;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.course-five .circle{
+.circle-container .circle{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
@@ -526,12 +589,12 @@
 	height: 450px;
 	text-align: center;
 }
-.course-six{
+.communicate-container{
 	background:#fff;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.course-six .communicate{
+.communicate-container .communicate{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
@@ -577,22 +640,22 @@
 	background-position: center center;
 	background-size: 70px;
 }
-.course-seven{
+.safeguard-container{
 	background:#f9f9f9;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.course-seven .communicate{
+.safeguard-container .communicate{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
 }
-.course-eight{
+.system-container{
 	background:#fff;
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-.course-eight .course-system{
+.system-container .course-system{
 	width: 1000px;
 	margin:0 auto;
 	text-align: center;
@@ -604,7 +667,6 @@
 	color: #333;
 	letter-spacing: 4px;
 	margin-bottom: 20px;
-
 }
 .course-system .system-desc{
 	font-size: 14px;
@@ -614,20 +676,24 @@
 	font-weight:400;
 	color: #b1b1b5;
 }
-.course-eight .course-system .works{
+.course-system .works{
 	display: inline-block;
 	margin-top:50px;
 	width: 100%;
 	height: auto;
 	list-style: none;
 }
-.course-eight .works li{
+.course-system .works .work-item{
 	float: left;
 	font-size: 0;
 	width: 25%;
-	overflow: hidden;
+	overflow: hidden;	
 }
-
+.course-system .works .work-item img{
+	width: 100%;
+	height: auto;
+	transition: all 3s ease;
+}
 .course-nine{
 	background:#f9f9f9;
 	padding-top: 70px;
